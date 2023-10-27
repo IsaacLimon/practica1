@@ -1,8 +1,8 @@
 CXX = x86_64-w64-mingw32-g++
 br: clean compilar ejecutar
 
-compilar: scr/Juego.cpp
-	$(CXX) scr/Juego.cpp -o bin/humanos -I include
+compilar: src/Juego.cpp
+	$(CXX) src/Juego.cpp -o bin/humanos -I include
 
 ejecutar: bin/Juego
 	./bin/Juego
