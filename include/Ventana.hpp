@@ -25,17 +25,16 @@ public:
         {
             actualizable->Actualizar();
         }
-        usleep(40000); // 0.041s/fotograma
+        usleep(160000); // 0.041s/fotograma
     }
     void Dibujar(list<Dibujo *> dibujos)
     {
         clear();
-        
         for (auto &&dibujo : dibujos)
         {
             dibujo->Dibujar();
         }
-        box(stdscr, 'x', '>');
+        box(stdscr, '+', '+');
         refresh();
     }
     ~Ventana()

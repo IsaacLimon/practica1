@@ -2,32 +2,28 @@
 #include <Dibujo.hpp>
 #include <Actualizable.hpp>
 
-class Figura : public Dibujo, public Actualizable 
+class Rectangulo : public Dibujo, public Actualizable 
 {
 private:
 public:
-    Figura() : Dibujo("Figura")
+    Rectangulo() : Dibujo("Rectangulo")
     {
     }
-    Figura(int x, int y) : Dibujo(x, y, "Figura")
+    Rectangulo(int x, int y) : Dibujo(x, y, "Rectangulo")
     {
     }
     void DesplazarIzquierda()
     {
-        this->x += -10;
+        this->x += -1;
     }
     void DesplazarDerecha()
     {
-        this->x += 10;
-    }
-    void DesplazarAbajo()
-    {
-        this->y += 5;
+        this->x += 1;
     }
     void Actualizar()
     {
         this->x += 0;
         this->y += 1;
     }
-    ~Figura() {}
+    ~Rectangulo() {}
 };
