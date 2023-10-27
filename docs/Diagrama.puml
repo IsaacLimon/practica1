@@ -1,0 +1,16 @@
+@@startuml
+class Juego
+class Tetris
+class Zeta
+class Rectangulo 
+class Cuadrado 
+class Ele 
+class Figura
+
+Tetris -|> Juego
+Tetris --* Figura
+Rectangulo -|> Figura
+Cuadrado -|> Figura
+Ele -|> Figura
+Zeta -|> Figura
+@@@enduml

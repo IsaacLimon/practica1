@@ -2,7 +2,7 @@
 #include <Dibujo.hpp>
 #include <Actualizable.hpp>
 
-class Figura : public Dibujo, public Actualizable 
+class Figura : public Dibujo, public Actualizable
 {
 private:
 public:
